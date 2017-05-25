@@ -1,9 +1,97 @@
+html, body {
+    margin: auto;
+    padding: 0px;
+    font-family: 'Lora', serif;
+    background: #959FAB;
+}
 
+html {
+    background-color: #0A2A3F;
+}
+
+body {
+    width: 60%;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Muli', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 2.2em;
+}
+
+h3 {
+    color: #1049AF;
+    font-size: 1.2em;
+}
 
 .article {
-    border: 2px solid black;
-    padding: 5px;
-    margin: 15px;
+    background-color: #4396F4;
+    padding: 0.5px 20px 15px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.article:hover {
+    border-left: 5px solid #1049AF;
+}
+
+input[type=text] {
+    border: 5px solid #1049AF;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    outline: none;
+    background-color: #959FAB;
+    border-radius: 50px;
+    color: white;   
+    font-size: .9em;
+}
+
+input[type=text]:focus {
+    background-color: #4396F4;
+}
+
+input[type=text]::placeholder {
+    color: #1049AF; 
+}
+
+button {
+    border-radius: 50px;
+    border: 5px solid #1049AF;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    outline: none;
+    background-color: #959FAB;
+    color: #1049AF;   
+    font-size: .9em;
+}
+
+button:hover {
+    background-color: #4396F4;
+}
+
+#random {
+    display: inline-block;
+}
+
+.fa-wikipedia-w {
+    color: white;
+    font-size: 3em;
+    float: right;
+    margin-top: 20px;
+    margin-right: 2.5%;
+}
+
+p {
+    font-size: .9em;
+    color: #1049AF;
+    font-weight: bold;
+    
 }
 
 a {

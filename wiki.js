@@ -2,6 +2,7 @@
 
 var $form = $("form");
 var $input = $("input");
+var $random = $("#random");
 var $results = $("#results");
 
 function getWiki(search) {
@@ -15,7 +16,7 @@ function getWiki(search) {
             var div = $("<div class='article'>");
             var addy = data[3][i];
             console.log(data[1][i]);
-            div.append("<h2>" + data[1][i] + "</h2>");
+            div.append("<h3>" + data[1][i] + "</h3>");
             div.append("<p>" + data[2][i] + "</p>");
             console.log(div);
             var link = $("<a href=" + addy + ">");
@@ -31,6 +32,11 @@ function getWiki(search) {
     });
 }
 
+$random.on("click", function(e) {
+    e.preventDefault();
+    window.open("https://en.wikipedia.org/wiki/Special:Random");
+});
+
 $form.on("submit", function(e) {
     e.preventDefault();
     
@@ -42,5 +48,7 @@ $form.on("submit", function(e) {
     
 
 });
+
+
 
 
